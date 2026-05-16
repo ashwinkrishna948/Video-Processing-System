@@ -1,0 +1,56 @@
+# Core framework
+fastapi>=0.111.0
+uvicorn[standard]>=0.30.0
+pydantic>=2.7.0
+pydantic-settings>=2.3.0
+python-dotenv>=1.0.0
+
+# LangGraph
+langgraph>=0.2.0
+langchain>=0.2.0
+langchain-groq>=0.1.6
+
+# Structured LLM outputs via Pydantic (retry loop on ValidationError)
+instructor>=1.3.0
+
+# Video processing
+yt-dlp>=2024.5.27
+opencv-python>=4.10.0
+scenedetect[opencv]>=0.6.4
+moviepy>=1.0.3
+Pillow>=10.3.0
+imageio>=2.34.0
+imageio-ffmpeg>=0.5.0
+
+# Face detection & recognition
+facenet-pytorch>=2.6.0
+torch>=2.3.0
+torchvision>=0.18.0
+
+# Audio / transcription / diarization / signal analysis
+groq>=0.9.0
+pyannote.audio>=3.3.0
+pydub>=0.25.1
+librosa>=0.10.0
+soundfile>=0.12.1
+
+# Embeddings — Jina v5-omni via API (text + image + audio + video, 1024-dim)
+# No local model weights needed; uses Jina AI REST API (free tier available)
+
+# Vector DB
+lancedb>=0.8.0
+pyarrow>=16.0.0
+
+# Clustering & numerics
+scikit-learn>=1.5.0
+numpy>=1.26.0
+pandas>=2.2.0
+
+# Report
+openpyxl>=3.1.4
+
+# Utilities
+httpx>=0.27.0
+aiofiles>=23.2.1
+tenacity>=8.3.0
+tqdm>=4.66.0
